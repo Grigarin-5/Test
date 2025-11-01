@@ -1,0 +1,21 @@
+PYTHON BUILT-IN EXCEPTIONS LIST
+
+ZeroDivisionError
+ValueError
+TypeError
+NameError
+IndexError
+KeyError
+FileNotFoundError
+IOError
+AttributeError
+ImportError
+ModuleNotFoundError
+RuntimeError
+AssertionError
+MemoryError
+OverflowError
+IndentationError
+SyntaxError
+EOFError
+StopIteration

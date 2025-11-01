@@ -1,0 +1,197 @@
+1. Introduction to Python
+
+Python is a high-level, interpreted, and general-purpose programming language.
+It emphasizes readability and simplicity.
+
+Key Features:
+
+Easy to learn and read
+
+Interpreted (no need for compilation) .
+
+Dynamically typed (no need to declare variable types)
+
+Supports Object-Oriented, Functional, and Procedural programming
+
+Huge standard library
+
+Portable (works on multiple platforms)
+
+2. Basic Syntax
+
+Comments: # Single line comment
+
+Print statement: print("Hello, World!")
+
+Variables: No declaration needed
+Example:
+name = "Alice"
+age = 20
+
+
+3. DataTypes
+Type	            Example	                Description
+int	                10                      Whole numbers
+float	            3.14                    Decimal numbers
+str	                "hello"                 Text data
+bool	            True / False	        Boolean values
+list	            [1, 2, 3]	            Ordered, mutable collection
+tuple	            (1, 2, 3)	            Ordered, immutable collection
+set	                {1, 2, 3}	            Unordered, unique values
+dict	            {"name":"John", "age":25}	Key-value pairs
+
+a= 0
+a+=6
+a= a-6
+
+5. Operators
+Arithmetic Operators:       + - * / % // **
+Comparison Operators:       == != > < >= <=
+Logical Operators:          and or not
+Assignment Operators:       = += -= *= /=
+Membership Operators:       in, not in  
+Identity Operators:         is, is not
+
+6. Conditional Statements
+if condition:
+    # code
+elif another_condition:
+    # code
+else:
+    # code
+
+7. Loops
+for i in range(5):
+    print(i)
+
+Loop Control:
+
+break → Exit loop
+
+continue → Skip current iteration
+
+pass → Do nothing (placeholder)
+
+
+8. Functions
+
+def greet(name):
+    return "Hello " + name
+
+print(greet("John"))
+
+
+Types of Arguments:
+
+Positional
+Keyword
+Default
+Variable length (*args, **kwargs)
+
+
+9. Lists and Tuples
+fruits = ["apple", "banana", "cherry"]
+fruits.append("mango")
+print(fruits[1])
+
+
+10. Dictionary and Set
+student = {"name": "Tom", "age": 20}
+print(student["name"])
+student["age"] = 21
+
+
+11. String Operations
+
+s = "Hello World"
+print(s.lower())
+print(s.upper())
+print(s[0:5])
+print(len(s))
+print(s.replace("World", "Python"))
+
+
+12. File Handling
+
+
+
+| Mode   | Meaning            | Description                                                                |
+| ------ | ------------------ | -------------------------------------------------------------------------- |
+| `'r'`  | Read               | Opens the file for reading (default). Error if the file doesn’t exist.     |
+| `'w'`  | Write              | Opens the file for writing. Creates a new file or overwrites if it exists. |
+| `'a'`  | Append             | Opens the file for writing but adds to the end (does not overwrite).       |
+| `'x'`  | Exclusive creation | Creates a new file but gives an error if it already exists.                |
+| `'r+'` | Read & Write       | Opens the file for both reading and writing. Must exist.                   |
+| `'w+'` | Write & Read       | Overwrites existing file or creates a new one.                             |
+| `'a+'` | Append & Read      | Opens file for appending and reading; creates new file if needed.          |
+| `'b'`  | Binary mode        | Used for binary files like images, videos, etc. (e.g., `'rb'`, `'wb'`).    |
+| `'t'`  | Text mode          | Default mode for text files (e.g., `'rt'`, `'wt'`).                        |
+
+# Write to file
+f = open("data.txt", "w")
+f.write("Hello Python")
+f.close()
+
+# Read from file
+f = open("data.txt", "r")
+print(f.read())
+f.close()
+
+13. Exception Handling
+try:
+    num = int(input("Enter number: "))
+    print(10 / num)
+except ZeroDivisionError:
+    print("Cannot divide by zero!")
+except ValueError:
+    print("Invalid input")
+finally:
+    print("Program ended")
+
+
+
+14. Object-Oriented Programming (OOP)
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def greet(self):
+        print("Hello, my name is", self.name)
+
+p1 = Person("Alice", 25)
+p1.greet()
+
+
+Concepts:
+Class & Object
+Constructor (__init__)
+Inheritance
+Polymorphism
+Encapsulation
+
+
+15. Modules and Packages
+import math
+print(math.sqrt(16))
+
+Create mymodule.py
+
+def add(a, b):
+    return a + b
+
+Then import:
+
+import mymodule
+print(mymodule.add(2,3))
+
+
+
+16. Libraries and Frameworks
+
+
+NumPy → numerical computing
+Pandas → data manipulation
+Matplotlib → data visualization
+Flask / Django → web development
+PyTorch / TensorFlow → machine learning
